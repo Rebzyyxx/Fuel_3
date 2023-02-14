@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="ВВЕДИТЕ ВЕЛИЧИНУ МАССЫ"
+        android:textColor="#684CAA"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/massIn"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="#7AE1D9FF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Поле ввода веса груза (в кг.)"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#2139B1"
+        android:textColorHint="#6553456A"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="РАССЧИТАТЬ АБСОЛЮТНУЮ ЭНЕРГИЮ"
+        android:padding="17dp"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/massIn" />
+
+    <TextView
+        android:id="@+id/energyOut"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="#4BCCB1FF"
+        android:gravity="center"
+        android:hint="Здесь будет отражен вес необходимого топлива (в кг.)"
+        android:textColor="#054968"
+        android:textColorHint="#63584D75"
+        android:textSize="19sp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="136dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Справка: 1кВт равняется 1000 Джоулям потраченым за 1 секунду"
+        android:textColor="#51544C70"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/energyOut" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
